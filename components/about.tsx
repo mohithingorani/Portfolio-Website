@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3 mx-4 md:mx-0">
         Currently in my third year of pursuing a degree in{" "}
         <span className="font-medium">Computer Science Engineering</span> at
         Manipal University Jaipur, I have cultivated a strong passion for

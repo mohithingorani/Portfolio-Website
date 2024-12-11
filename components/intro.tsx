@@ -109,7 +109,7 @@ export default function Intro() {
         </motion.h1>
 
         <motion.div
-          className="flex flex-row items-center  justify-start gap-6   font-medium font-mono"
+          className="flex flex-row items-center  justify-start md:gap-6   font-medium font-mono"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -118,7 +118,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 lg:px-8  sm:text-sm lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 lg:px-8  text-sm lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -129,7 +129,7 @@ export default function Intro() {
           </Link>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 lg:px-8 sm:text-sm lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 lg:px-8 text-sm lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="/Resume.pdf"
             download
           >
