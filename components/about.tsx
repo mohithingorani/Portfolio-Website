@@ -19,30 +19,35 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        Currently in my third year of pursuing a degree in{" "}
+        <span className="font-medium">Computer Science Engineering</span> at
+        Manipal University Jaipur, I have cultivated a strong passion for
+        programming.{" "}
+        <span className="italic">
+          The aspect of programming I find most engaging
+        </span>{" "}
+        is solving complex problems. I <span className="underline">love</span>{" "}
+        the challenge and satisfaction of crafting effective solutions. My core
+        tech stack includes{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Node.js, and PostgreSQL
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I am also proficient in TypeScript and Prisma and am continuously
+        learning new technologies. I am actively seeking a{" "}
+        <span className="font-medium">
+          full-time software developer position
+        </span>{" "}
+        to apply and further develop my skills.
       </p>
-
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">When I’m not coding</span>, I enjoy playing
+        video games, watching movies, and playing chess. I also have a strong
+        interest in <span className="font-medium">learning new things</span>.
+        Additionally, I am a skilled{" "}
+        <span className="font-medium">graphics designer</span> and serve as the{" "}
+        <span className="font-medium">General Secretary</span> of the IEEE
+        Computer Society at my college, where I drive innovation and manage
+        various technical initiatives.
       </p>
     </motion.section>
   );

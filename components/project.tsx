@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  href,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -22,6 +24,7 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
+    <Link href = {href}>
     <motion.div
       ref={ref}
       style={{
@@ -52,6 +55,8 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
+          width={200}
+          height={200}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
@@ -67,5 +72,6 @@ export default function Project({
         />
       </section>
     </motion.div>
+    </Link>
   );
 }
