@@ -2,9 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -62,7 +59,7 @@ export const projectsData = [
     description:
       "An innovative, user-friendly web application designed to enhance energy efficiency within your home.",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma"],
-    imageUrl: "/website1.JPG",
+    imageUrl: "/website1.jpg",
     href: "https://github.com/mohithingorani/SmartHomeAuto",
   },
 ] as const;
