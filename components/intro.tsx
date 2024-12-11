@@ -18,10 +18,8 @@ export default function Intro() {
   const [strings] = useState([
     "Mohit Hingorani",
     "Full Stack Developer",
-    "Web Developer",
-    "Frontend Developer",
-    "Data Scientist",
-    "Backend Developer",
+    "Graphics Designer"
+  
   ]);
   const [currentString, setCurrentString] = useState(strings[0]);
 
