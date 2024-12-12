@@ -118,7 +118,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="bg-white text-center  justify-center p-4 w-full md:w-auto text-gray-700 flex items-center gap-2 lg:px-8  text-md lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white text-center  justify-center p-4 w-full md:w-auto text-gray-700 flex items-center gap-2 lg:px-8  text-md lg:text-lg rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -130,7 +130,7 @@ export default function Intro() {
 
           <a
             className="bg-white p-4 w-full md:w-auto
-             justify-center text-gray-700 flex items-center gap-2 lg:px-8 text-md lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+             justify-center text-gray-700 flex items-center gap-2 lg:px-8 text-md lg:text-lg rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="/Resume.pdf"
             download
           >
@@ -139,7 +139,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="bg-white w-full p-4 md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white w-full p-4 md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] md:active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="https://www.linkedin.com/in/mohit-hingorani-439265248/"
             target="_blank"
           ><span className="inline-block sm:hidden">
@@ -147,7 +147,7 @@ export default function Intro() {
             <BsLinkedin />
           </a>
           <a
-            className="bg-white p-4 w-full md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white p-4 w-full md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] md:active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="https://github.com/mohithingorani"
             target="_blank"
           ><span className="inline-block sm:hidden">Github</span>
