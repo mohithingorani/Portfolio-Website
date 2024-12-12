@@ -40,7 +40,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 sm:mb-0 scroll-mt-[100rem] flex flex-col sm:flex-row items-center text-center sm:text-left   py-16"
+      className="mb-14 sm:mb-0 scroll-mt-[100rem] flex flex-col sm:flex-row items-center text-center sm:text-left"
     >
       <div className="flex items-center justify-center">
         <motion.div
@@ -59,7 +59,7 @@ export default function Intro() {
             height="192"
             quality="95"
             priority={true}
-            className="h-24 w-24 sm:h-48 sm:w-48 rounded-full object-cover border-[0.35rem] border-gray-300 shadow-lg dark:border-gray-700"
+            className="h-30 w-30 sm:h-48 sm:w-48 rounded-full object-cover border-[0.35rem] border-gray-300 shadow-lg dark:border-gray-700"
           />
           <motion.span
             className="absolute bottom-0 right-0 text-4xl"
@@ -77,7 +77,7 @@ export default function Intro() {
         </motion.div>
       </div>
 
-      <div className="sm:px-20 md:px-10 mt-8 sm:mt-0 text-gray-800 dark:text-gray-100">
+      <div className="sm:px-20  md:px-10 mt-8 sm:mt-0 text-gray-800 dark:text-gray-100">
         <motion.h1
           className="mb-6 sm:mb-10  leading-tight max-w-[50rem] "
           initial={{ opacity: 0, y: 100 }}
@@ -109,7 +109,7 @@ export default function Intro() {
         </motion.h1>
 
         <motion.div
-          className="flex flex-row items-center  justify-start md:gap-6   font-medium font-mono"
+          className="flex flex-col gap-4 mx-20 md:flex-row items-center  justify-start md:gap-6   font-medium font-mono"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -118,7 +118,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 lg:px-8  text-sm lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white text-center  justify-center p-4 w-full md:w-auto text-gray-700 flex items-center gap-2 lg:px-8  text-md lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -129,7 +129,8 @@ export default function Intro() {
           </Link>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 lg:px-8 text-sm lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white p-4 w-full md:w-auto
+             justify-center text-gray-700 flex items-center gap-2 lg:px-8 text-md lg:text-lg rounded-full focus:scale-[1.15] hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="/Resume.pdf"
             download
           >
@@ -138,17 +139,18 @@ export default function Intro() {
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white w-full p-4 md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="https://www.linkedin.com/in/mohit-hingorani-439265248/"
             target="_blank"
-          >
+          ><span className="inline-block sm:hidden">
+            Linkedin</span> 
             <BsLinkedin />
           </a>
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white p-4 w-full md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.05] active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="https://github.com/mohithingorani"
             target="_blank"
-          >
+          ><span className="inline-block sm:hidden">Github</span>
             <FaGithub />
           </a>
         </motion.div>

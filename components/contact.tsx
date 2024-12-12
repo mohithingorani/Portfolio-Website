@@ -31,7 +31,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-
+      <div className="mx-10 md:mx-0">
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:example@gmail.com">
@@ -70,6 +70,7 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+      </div>
     </motion.section>
   );
 }

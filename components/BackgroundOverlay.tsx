@@ -8,11 +8,11 @@ export default function BackgroundOverlay() {
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Bubbles */}
-        <circle cx="100" cy="100" r="40" fill="rgba(255, 255, 255, 0.2)" />
-        <circle cx="300" cy="150" r="60" fill="rgba(255, 255, 255, 0.15)" />
-        <circle cx="600" cy="100" r="50" fill="rgba(255, 255, 255, 0.25)" />
-        <circle cx="900" cy="200" r="70" fill="rgba(255, 255, 255, 0.2)" />
-        <circle cx="1200" cy="150" r="55" fill="rgba(255, 255, 255, 0.3)" />
+        <circle cx="100" cy="100" r="40" fill="rgba(255, 255, 255, 0.1)" />
+        <circle cx="300" cy="150" r="60" fill="rgba(255, 255, 255, 0.1)" />
+        <circle cx="600" cy="100" r="50" fill="rgba(255, 255, 255, 0.1)" />
+        <circle cx="900" cy="200" r="70" fill="rgba(255, 255, 255, 0.1)" />
+        <circle cx="1200" cy="150" r="55" fill="rgba(255, 255, 255, 0.1)" />
       </svg>
     );
   }
