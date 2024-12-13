@@ -40,7 +40,7 @@ export default function About() {
         </span>{" "}
         to apply and further develop my skills.
       </p>
-      <p>
+      <p className="hidden md:inline-block">
         <span className="italic">When I’m not coding</span>, I enjoy playing
         video games, watching movies, and playing chess. I also have a strong
         interest in <span className="font-medium">learning new things</span>.
