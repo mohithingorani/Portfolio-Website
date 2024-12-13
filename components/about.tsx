@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <div className="mx-10 md:mx-0">
+      <div className="mx-8 md:mx-0">
       <p className="">
         Currently in my third year of pursuing a degree in{" "}
         <span className="font-medium">Computer Science Engineering</span> at

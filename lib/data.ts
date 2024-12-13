@@ -62,6 +62,24 @@ export const projectsData = [
     imageUrl: "/website1.jpg",
     href: "https://github.com/mohithingorani/SmartHomeAuto",
   },
+  {title : "WellNest",
+  description: "An Online Therapy Platform for Mental Health",
+  tags: ["ReactNative", "Node.js", "PostgreSQL"],
+  imageUrl: "/wellnestimage.jpg",
+  href: "https://github.com/mohithingorani/WellNest"}, 
+  {
+    title:"Realtime Chat App",
+    description: "A  website with real-time messaging using WebSockets. Chat in real-time, and enjoy seamless communication.",
+    tags: ["Typescript", "NextJS", "NextAuth", "WebSockets"],
+    imageUrl: "/chatappimage.png",
+    href: "https://github.com/mohithingorani/chat-app-frontend"
+  }, {
+    title:"Hex And Code",
+    description: "An LMS for for collaborative learning.",
+    tags: ["Next.js", "Tailwind"],
+    imageUrl: "/hexandcodes.png",
+    href: "https://github.com/mohithingorani/HexAndCode"
+  }
 ] as const;
 
 export const skillsData = [

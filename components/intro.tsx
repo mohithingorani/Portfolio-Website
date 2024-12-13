@@ -17,11 +17,13 @@ export default function Intro() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [strings] = useState([
     "Mohit Hingorani",
-    "Full Stack Developer",
-    "App Developer"
+    "a Full Stack Developer",
+    "an App Developer"
   
   ]);
   const [currentString, setCurrentString] = useState(strings[0]);
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -40,7 +42,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-14 sm:mb-0 scroll-mt-[100rem] flex flex-col sm:flex-row items-center text-center sm:text-left"
+      className="mb-14 md:mb-20 sm:mb-0 scroll-mt-[100rem] flex flex-col sm:flex-row items-center  sm:text-left"
     >
       <div className="flex items-center justify-center">
         <motion.div
@@ -83,9 +85,11 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <div className=" flex flex-col  md:text-3xl font-mono gap-4 font-semibold">
-            <div className="flex items-center md:justify-start justify-center gap-4">
-              <div>Hello, I'm </div>
+          <div className=" flex flex-col  md:text-3xl mono gap-4 ">
+            <div className="px-8 md:px-0 flex text-lg md:text-4xl md:items-center justify-start font-semibold">
+              <div className="">Hello, I'm </div>
+              <div>&nbsp;</div> 
+
               <Typewriter
                 key={currentString} // Force re-render when currentString changes
                 options={{
@@ -100,7 +104,7 @@ export default function Intro() {
                 }}
               />
             </div>
-            <div className="px-8  md:px-0">
+            <div className="px-8 leading-8 text-lg md:text-4xl  md:leading-14 md:px-0">
               I'm a full-stack developer with extensive experience in web
               development. I enjoy building sites & applications. My primary
               focus is Next.js.
@@ -109,7 +113,7 @@ export default function Intro() {
         </motion.h1>
 
         <motion.div
-          className="flex flex-col gap-4 mx-20 md:flex-row items-center  justify-start md:gap-6   font-medium font-mono"
+          className="flex flex-col gap-4 px-18 md:flex-row items-center mx-8  justify-start md:gap-6   font-medium font-mono"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -118,7 +122,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="bg-white text-center  justify-center p-4 w-full md:w-auto text-gray-700 flex items-center gap-2 lg:px-8  text-md lg:text-lg rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+            className="bg-white text-center   justify-center p-4 w-full md:w-auto text-gray-700 flex items-center gap-2 lg:px-8  text-md lg:text-lg rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
