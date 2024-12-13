@@ -42,8 +42,9 @@ export default function RootLayout({
         className={`${roboto.className} relative pt-28 sm:pt-36 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 text-gray-900 dark:text-gray-100 dark:text-opacity-90`}
       >
         {/* Background Overlay with bubbles */}
+        <div className="hidden md:inline-block">
         <BackgroundOverlay />
-
+        </div>
         {/* Theme and Section Context Providers */}
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
