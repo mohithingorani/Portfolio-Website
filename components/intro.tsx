@@ -18,12 +18,9 @@ export default function Intro() {
   const [strings] = useState([
     "Mohit Hingorani",
     "a Full Stack Developer",
-    "an App Developer"
-  
+    "an App Developer",
   ]);
   const [currentString, setCurrentString] = useState(strings[0]);
-
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -86,23 +83,27 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
         >
           <div className=" flex flex-col  md:text-3xl mono gap-4 ">
-            <div className="px-8 md:px-0 flex text-lg md:text-4xl md:items-center justify-start font-semibold">
+            <div className="px-8 md:px-0 md:flex text-lg md:text-4xl md:items-center justify-start font-semibold">
               <div className="">Hello, I'm </div>
-              <div>&nbsp;</div> 
-
-              <Typewriter
-                key={currentString} // Force re-render when currentString changes
-                options={{
-                  loop: false,
-                }}
-                onInit={(typewriter: any) => {
-                  typewriter
-                    .typeString(currentString)
-                    .pauseFor(500)
-                    .deleteAll()
-                    .start();
-                }}
-              />
+              <div className="hidden md:inline-block">&nbsp;</div>
+              <div className="hidden md:inline-block">
+                <Typewriter
+                  key={currentString} // Force re-render when currentString changes
+                  options={{
+                    loop: false,
+                  }}
+                  onInit={(typewriter: any) => {
+                    typewriter
+                      .typeString(currentString)
+                      .pauseFor(500)
+                      .deleteAll()
+                      .start();
+                  }}
+                />
+              </div>
+              <div className="md:hidden text-4xl font-bold">
+                Mohit Hingorani
+              </div>
             </div>
             <div className="px-8 leading-8 text-lg md:text-4xl  md:leading-14 md:px-0">
               I'm a full-stack developer with extensive experience in web
@@ -135,7 +136,7 @@ export default function Intro() {
           <a
             className="bg-white p-4 w-full md:w-auto
              justify-center text-gray-700 flex items-center gap-2 lg:px-8 text-md lg:text-lg rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] hover:text-gray-900 active:shadow-md transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
-            href="/Resume.pdf"
+            href="/Mohit Hingorani Resume.pdf"
             download
           >
             Download Resume{" "}
@@ -146,15 +147,16 @@ export default function Intro() {
             className="bg-white w-full p-4 md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] md:active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="https://www.linkedin.com/in/mohit-hingorani-439265248/"
             target="_blank"
-          ><span className="inline-block sm:hidden">
-            Linkedin</span> 
+          >
+            <span className="inline-block sm:hidden">Linkedin</span>
             <BsLinkedin />
           </a>
           <a
             className="bg-white p-4 w-full md:w-auto justify-center text-gray-700 hover:text-gray-900 flex items-center gap-2 rounded-full md:focus:scale-[1.15] md:hover:scale-[1.05] md:active:scale-105 transition duration-300 shadow-md dark:bg-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
             href="https://github.com/mohithingorani"
             target="_blank"
-          ><span className="inline-block sm:hidden">Github</span>
+          >
+            <span className="inline-block sm:hidden">Github</span>
             <FaGithub />
           </a>
         </motion.div>
